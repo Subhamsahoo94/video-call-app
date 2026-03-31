@@ -1,0 +1,189 @@
+/* ===== ROOT ===== */
+.meetVideoContainer {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(circle at top, #020617, #000);
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== PARTICIPANT GRID ===== */
+.conferenceView {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Video tile */
+.conferenceView > div {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+/* Hover glow */
+.conferenceView > div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(59,130,246,0.3);
+}
+
+/* Video */
+.conferenceView video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Username overlay */
+.conferenceView > div::after {
+  content: "Participant";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  background: rgba(0,0,0,0.6);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+/* ===== SELF VIDEO (FLOATING) ===== */
+.meetUserVideo {
+  position: absolute;
+  bottom: 110px;
+  right: 20px;
+  width: 280px;
+  height: 170px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.2);
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.meetUserVideo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(59,130,246,0.4);
+}
+
+/* ===== CONTROL BAR ===== */
+.buttonContainers {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 18px;
+  background: rgba(0,0,0,0.65);
+  padding: 14px 24px;
+  border-radius: 50px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+/* Buttons */
+.buttonContainers .MuiIconButton-root {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  transition: 0.25s;
+}
+
+/* Hover */
+.buttonContainers .MuiIconButton-root:hover {
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.15);
+}
+
+/* Active mic/cam */
+.buttonContainers .MuiIconButton-root svg {
+  font-size: 26px;
+}
+
+/* End Call */
+.buttonContainers .MuiIconButton-root:nth-child(2) {
+  background: #ef4444;
+}
+
+.buttonContainers .MuiIconButton-root:nth-child(2):hover {
+  background: #dc2626;
+  box-shadow: 0 0 15px red;
+}
+
+/* ===== CHAT PANEL ===== */
+.chatRoom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  background: rgba(2,6,23,0.95);
+  backdrop-filter: blur(18px);
+  border-left: 1px solid rgba(255,255,255,0.08);
+  z-index: 20;
+  animation: slideIn 0.3s ease;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Chat */
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px;
+}
+
+/* Messages */
+.chattingDisplay {
+  flex: 1;
+  overflow-y: auto;
+  margin: 10px 0;
+}
+
+.chattingDisplay p {
+  margin: 2px 0;
+}
+
+/* Input */
+.chattingArea {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== SPEAKING GLOW (fake visual) ===== */
+.conferenceView > div:hover {
+  border: 1px solid #3b82f6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .conferenceView {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .meetUserVideo {
+    width: 140px;
+    height: 90px;
+    bottom: 130px;
+  }
+
+  .buttonContainers {
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .chatRoom {
+    width: 100%;
+  }
+}

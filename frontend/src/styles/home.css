@@ -1,0 +1,146 @@
+/* ===== NAVBAR ===== */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0f172a;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Title */
+.navBar h2 {
+  font-weight: 700;
+  font-size: 22px;
+
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  display: inline-block;
+}
+
+/* Right side */
+.navBar p {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+/* Logout button */
+.navBar button {
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-left: 10px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.meetContainer {
+  display: flex;
+  height: calc(100vh - 70px);
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: white;
+}
+
+/* ===== LEFT PANEL ===== */
+.leftPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Inner content */
+.leftPanel h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Input + button wrapper */
+.leftPanel > div > div {
+  margin-top: 20px;
+}
+
+/* ===== TEXTFIELD ===== */
+.MuiTextField-root {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+}
+
+.MuiOutlinedInput-root {
+  color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255,255,255,0.2) !important;
+}
+
+.MuiInputLabel-root {
+  color: #aaa !important;
+}
+
+/* ===== JOIN BUTTON ===== */
+.leftPanel button {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+.leftPanel button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+/* ===== RIGHT PANEL ===== */
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Image */
+.rightPanel img {
+  width: 70%;
+  max-width: 400px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .meetContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightPanel img {
+    width: 50%;
+  }
+
+  .leftPanel h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,77 @@
+/* Background */
+.zoom-container {
+  min-height: 100vh;
+  background: #0b0f19;
+  color: white;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.zoom-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.zoom-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Home button */
+.zoom-home-btn {
+  background: #1a73e8 !important;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.zoom-home-btn:hover {
+  background: #1557b0 !important;
+  transform: scale(1.1);
+}
+
+/* Grid layout */
+.zoom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.zoom-card {
+  background: #161b22 !important;
+  border-radius: 16px !important;
+  padding: 10px;
+  transition: 0.3s ease !important;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Hover effect */
+.zoom-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Meeting code */
+.zoom-code {
+  font-size: 20px;
+  font-weight: 600;
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+/* Date */
+.zoom-date {
+  font-size: 14px;
+  color: #8b949e;
+}
+
+/* Empty */
+.zoom-empty {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-top: 50px;
+  color: #aaa;
+}
