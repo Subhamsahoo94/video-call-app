@@ -1,4 +1,4 @@
-# 🚀 Video Call App (Zoom Clone)
+# 🚀 Video Call App (Zoom like app)
 
 <p align="center">
   <b>Real-time video conferencing web app with chat, screen sharing & responsive UI</b>
