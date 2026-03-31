@@ -40,7 +40,7 @@ export default function VideoMeetComponent() {
 
     let [screen, setScreen] = useState();
 
-    let [showModal, setModal] = useState(true);
+    let [showModal, setModal] = useState(false);
 
     let [screenAvailable, setScreenAvailable] = useState();
 
@@ -471,7 +471,24 @@ export default function VideoMeetComponent() {
                     {showModal ? <div className={styles.chatRoom}>
 
                         <div className={styles.chatContainer}>
-                            <h1>Chat</h1>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+  <h1 style={{ fontSize: "18px" }}>Chat</h1>
+
+  <button 
+    onClick={() => setModal(false)} 
+    style={{
+      background: "red",
+      color: "white",
+      border: "none",
+      borderRadius: "50%",
+      width: "30px",
+      height: "30px",
+      cursor: "pointer"
+    }}
+  >
+    ✕
+  </button>
+</div>
 
                             <div className={styles.chattingDisplay}>
 
@@ -490,8 +507,18 @@ export default function VideoMeetComponent() {
                             </div>
 
                             <div className={styles.chattingArea}>
-                                <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" />
+                                {/* <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" /> */}
+                                      <TextField
+  value={message}
+  onChange={(e) => setMessage(e.target.value)}
+  label="Enter Your chat"
+  variant="outlined"
+  size="small"
+  fullWidth
+/>
+                                
                                 <Button variant='contained' onClick={sendMessage}>Send</Button>
+
                             </div>
 
 
