@@ -12,10 +12,6 @@
 
 ---
 
-## 📸 Screenshots
-
-### 🎥 Video Call Interface
-
 ![Video Call](https://via.placeholder.com/800x400?text=Video+Call+UI)
 
 ### 💬 Chat System
@@ -124,6 +120,9 @@ MONGO_URI=your_mongodb_connection_string
 **Subh (Subham Sahoo)**
 
 ---
+## 📸 Screenshots
+
+### 🎥 Video Call Interface
 
 ## ⭐ Support
 
