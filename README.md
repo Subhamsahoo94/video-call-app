@@ -111,7 +111,10 @@ MONGO_URI=your_mongodb_connection_string
 
 **Subh (Subham Sahoo)**
 
-![Video Call](https://via.placeholder.com/800x400?text=Video+Call+UI)
+![Video Call](https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%202026-04-01%20033510.png)
+              (https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%203.png)
+              (https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%202.png)
+              (https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%204.png)
 
 ### 💬 Chat System
 
