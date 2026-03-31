@@ -12,14 +12,6 @@
 
 ---
 
-![Video Call](https://via.placeholder.com/800x400?text=Video+Call+UI)
-
-### 💬 Chat System
-
-![Chat UI](https://via.placeholder.com/800x400?text=Chat+System)
-
----
-
 ## ✨ Features
 
 * 🎥 Real-time Video Calling (WebRTC)
@@ -119,10 +111,13 @@ MONGO_URI=your_mongodb_connection_string
 
 **Subh (Subham Sahoo)**
 
----
-## 📸 Screenshots
+![Video Call](https://via.placeholder.com/800x400?text=Video+Call+UI)
 
-### 🎥 Video Call Interface
+### 💬 Chat System
+
+![Chat UI](https://via.placeholder.com/800x400?text=Chat+System)
+
+---
 
 ## ⭐ Support
 
