@@ -114,7 +114,7 @@ MONGO_URI=your_mongodb_connection_string
 ### 💬 Website screenshot 
 
 ![Video Call](https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%202026-04-01%20033510.png)
-[2nsdpage](https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%203.png)
+![2nsdpage](https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%203.png)
 [](https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%202.png)
 [](https://github.com/Subhamsahoo94/video-call-app/blob/main/Screenshot%204.png)
 
